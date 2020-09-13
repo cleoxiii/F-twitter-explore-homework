@@ -2,9 +2,9 @@
   border: $container-border-base;
   border-radius: $border-radius-base;
   width: 30%;
-  height: 60%;
-  margin: 100px auto;
-  padding: $container-padding-y $container-padding-x;
+  height: fit-content;
+  margin: 5% auto;
+  padding: $container-padding-y * 2 $container-padding-x;
   display: flex;
   flex-direction: column;
 

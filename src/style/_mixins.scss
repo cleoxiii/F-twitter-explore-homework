@@ -1,5 +1,6 @@
 @mixin heading($font-size) {
   margin-top: 0;
+  margin-bottom: 40px;
   font-size: $font-size;
 }
 

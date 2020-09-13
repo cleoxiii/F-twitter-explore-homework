@@ -4,4 +4,42 @@
   width: 30%;
   height: 60%;
   margin: 100px auto;
+  padding: $container-padding-y $container-padding-x;
+  display: flex;
+  flex-direction: column;
+
+  .main-title {
+    @include heading(24px);
+    text-align: center;
+    color: $heading-color;
+    font-weight: bold;
+  }
+
+  .input {
+    width: 100%;
+    background-color: $body-bg;
+    border: none;
+    border-bottom: 1px solid $border-color;
+    outline: none;
+    line-height: $line-height-base;
+    margin-bottom: $margin-bottom-base;
+  }
+
+  .forget-password-link {
+    color: $primary-color;
+    text-decoration: none;
+    margin-bottom: $margin-bottom-base;
+  }
+
+  .btn-login {
+    @include btn-variant($primary-color, transparent, $primary-color);
+  }
+
+  .btn-register {
+    @include btn-variant($white, $primary-color, transparent);
+  }
+
+  .or {
+    text-align: center;
+  }
 }

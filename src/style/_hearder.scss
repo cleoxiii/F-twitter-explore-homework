@@ -4,4 +4,16 @@
   align-items: center;
   padding: $container-padding-y $container-padding-x;
   border-bottom: $container-border-base;
+
+  nav {
+    @extend .menu;
+  }
+
+  .btn-login {
+    @include btn-variant($primary-color, transparent, $primary-color);
+  }
+
+  .btn-register {
+    @include btn-variant($white, $primary-color, transparent);
+  }
 }
